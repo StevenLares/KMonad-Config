@@ -1,0 +1,20 @@
+(defcfg
+  input  (device-file "/dev/input/by-id/usb-SEMICO_USB_Keyboard-event-kbd" )
+  output (uinput-sink "kmonad kbd")
+  fallthrough true
+  allow-cmd false
+)
+
+(defsrc
+  caps
+)
+
+(deflayer base
+  @switchbehavior 
+)
+
+(defalias 
+  ;; Adjust time interval to taste: how much time held before it turns
+  ;; into left control
+  switchbehavior (tap-hold-next-release 200 esc lctrl)
+)
