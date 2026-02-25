@@ -23,6 +23,8 @@
   lctl lmet lalt           spc            ralt rmet cmp  rctl            left down rght  kp0  kp.
 )
 
+
+;;TODO
 (deflayer navigation
   _    _    _    _    _    _    _    _    _    _    _    _    _          _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _     _    _    _     _    _    _    _
